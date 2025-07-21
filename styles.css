@@ -1,0 +1,389 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+h1, h2, h3 {
+  color: #09090a;
+}
+.btn-orange {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-orange:hover {
+  background-color: darkorange;
+}
+.highlight {
+  color: orange;
+}
+.page-wrapper {
+  height: 50vh;
+  background-image: url("ship-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.text-overlay{
+  color:black;;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: left;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+}
+.topnav {
+  background-color: #fff;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.topnav a {
+  color: #2534db;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* active class*/
+.topnav a.active {
+  color: orange;
+  font-weight: bold;
+}
+.topnav a:active {
+  color: orange;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  max-width: 300px;
+  z-index: 1000;
+  font-size: 16px;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  white-space: normal;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+/* showing dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.arrow-icon {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Left and Right Logos */
+.logo-left,
+.logo-right {
+  margin:0;
+  flex-shrink:0;
+}
+.logo-left{
+  margin-right: auto;
+}
+.logo-right {
+  margin-left: auto;
+}
+.logo-left img, .logo-right img {
+  height: 40px;
+}
+ body, html {
+  height: 100%;
+  margin: 0;
+  height: 50vh;
+  background-image: url("ship-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+/* Mobile icon */
+.topnav .icon {
+  display: none;
+  font-size: 20px;
+  color: #2534db;
+  cursor: pointer;
+}
+.content-section .text-content {
+  flex: 1 1 400px;
+}
+.content-section {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 60px;
+  z-index: 1;
+  width: 100%;
+  margin-top: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.text-content {
+  flex: 1;
+  color: #000;
+  margin: 10px;
+  padding: 20px;
+  min-width: 300px;
+  background-color: #f9f9f9;
+}
+.text-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.text-content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.image-sect {
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.overlay-image {
+  position: absolute;
+  width: 35%; 
+  height: auto;
+  max-width: 250px;
+  bottom: -30px; 
+  right: -30px; 
+  border-width: 8px;
+  border: 6px solid white; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  z-index: 2; 
+  object-fit: cover;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 30px; 
+  left: 30px; 
+  background: white;
+  padding: 25px 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+  text-align: center;
+  z-index: 3; 
+}
+
+.years {
+  color: #ff6b00; 
+  font-size: 52px; 
+  margin-bottom: 5px;
+  font-weight: 800; 
+  line-height: 1;
+  font-family: 'Arial Black', sans-serif; 
+  display: block;
+}
+
+.registries-text {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px; 
+  margin-top: 8px; 
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px;
+  transition: 0.3s;
+}
+.feature:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.feature-card {
+  padding: 2px 16px
+}
+.industry-explicit {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-size {
+  flex: 1;
+  color: #000;
+  margin: 10px;
+  padding: 30px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+.text-size h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.text-size p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.img-size {
+  flex: 1;
+  max-width: 500px;
+  height: 500px;
+  /* overflow: hidden; */
+}
+.img-size img {
+  height: 100%;
+  width: auto;  
+  border-radius: 10px;
+  object-fit: cover;
+}
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.centered {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  flex-shrink: 0;;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer i {
+  margin: 0 10px;
+  color: orange;
+}
+
+/* responsive toggle */
+@media screen and (max-width: 500px) {
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .topnav a, .dropdown {
+    display: none; 
+    width: 100%;
+    text-align: left;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .topnav.responsive a, .topnav.responsive .dropdown {
+    display: block; /* Show links and dropdowns when responsive */
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .content-section {
+      flex-direction: column;
+      padding: 10px;
+    }
+  .row-text {
+      padding: 15px;
+    }
+  .image-sect {
+      text-align: center;
+    }
+  .features, .team-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container {
+    text-align: center;
+  }
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+
+  }
+
