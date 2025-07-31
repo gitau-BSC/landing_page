@@ -3,178 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My landing page</title>
-    <link rel="stylesheet" href="styles.css">
-<!-- Font Awesome CDN (always updated) -->
+    <title>Aerologic - About Us</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
-   <div class="page-wrapper">
-    <div class="text-overlay">
+   <header>
+  <div class="header-container">
+    <div class="logo-wrap">
+        <img src="Assets/bus.png" alt="Aerologic logo" class="logo-icon">
+        <span class="logo-text">Aero<span>Logic</span></span>
+    </div>
+
+   <!-- Hamburger Menu Button -->
+  <div id="hamburger" class="hamburger">
+     <i class="fa fa-bars"></i>
+  </div>
+
+    <!-- Navigation Links -->
+    <nav class="main-nav" id="nav-links">
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!--Right-logo-->
+      <a href="#" class="logo-right">
+        <img src="assets/logo-mark.png" alt="Aerologic Certification Badge" class="logo-mark">
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Sections -->
+<section id="home" class="page active">
+  <!-- <h2>Welcome to Aerologic!</h2> -->
+</section>
+<section id="about" class="page">
+  <h2>About Us..</h2>
+</section>
+<section id="services" class="page">
+  <!-- <h2>Our services</h2> -->
+</section>
+<section id="contact" class="page">
+  <!-- <h2>Contact Us</h2> -->
+</section>
+
+    <!--Hero Section-->
+   <section class="hero">
+     <div class="hero-content">
         <h1>About-Us</h1>
-        <h2>Home <span>&gt;</span>About-Us</h2>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li>About Us</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Main About section-->
+<section class="about-section">
+  <div class="about-container">
+    <div class="section-header">
+      <h2>Providing full-range of Transportation.</h2>
+      <p>Your transportation solution provider with 20+ years of industry experience.</p>
     </div>
-   <!--Navigation bar--> 
-   <div class="topnav" id="Topnav">
-    <!--left logo-->
-    <div class="logo-left">
-        <img src="Assets/bus.png" alt="left logo">
-    </div>
-    <!--Nav links-->
-    <div class="dropdown">
-       <a href="#home" class="active">Home</a>
-    </div>
-    <!--Dropdown-->
-    <div class="dropdown">
-          <a href="#about">About Us<i class="fa-solid fa-caret-down"></i></a>
-          <div class="dropdown-content">
-            <a href="#">Our Story</a>
-            <a href="#">Booking</a>
-            <a href="#">Expert Team</a>
+
+    <div class="about-row">
+      <div class="about-text">
+        <p>
+          We are dedicated to providing the best transportation services in the industry.
+          <br>Our team is committed to ensuring your logistics needs are met with excellence.
+        </p>
+        <div id="extra-info" class="extra-info">
+          <p>
+            We operate across air, land, and sea, ensuring flexibility and scalability for businesses of all sizes.
+            From small packages to large shipments, <br>our solutions are reliable, timely, and cost-effective.
+          </p>
+        </div>
+        <div class="cta-buttons">
+          <button class="btn btn-primary" id="discover-btn">Discover More</button>
+          <button type="button" class="btn btn-secondary" id="alert-contact-btn">Contact Us</button>
+        </div>
+      </div>
+        <!--Images section-->
+         <div class="about-images">
+          <div class="transport-images">
+            <img src="Assets/ship-3.jpg" alt="shipping" class="transport-img">
+            <img src="Assets/air-1.jpg" alt="Air Freight" class="transport-img">
+            <img src="Assets/train-2.jpg" alt="Ground Transport" class="transport-img">
+         </div>
+         <!--Experience Badge Overlay-->
+         <div class="experience-badge-wrapper">
+          <div class="experience-badge">
+           <span class="years">0</span>
+           <span class="badge-text">Years of Service</span>
           </div>
-    </div>
-    <!--Dropdown for Services-->
-    <div class="dropdown">
-        <a href="#services">Services<i class="fa-solid fa-caret-down"></i></a>
-        <div class="dropdown-content">
-            <a href="#Booking">Booking with us</a>
-            <a href="#package">Packages</a>
-            <a href="#price">Prices</a>
-        </div>
-    </div>
-        <div class="dropdown">
-            <a href="#Projects">Projects</a>
-        </div>
-    <!--Dropdown pages-->
-   <div class="dropdown">
-    <a href="pages">Pages<i class="fa-solid fa-caret-down"></i></a>
-    <div class="dropdown-content">
-        <a href="#blog">Blog</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </div>
-   </div>
-   <div class="dropdown">
-    <a href="#contact">Contact Us</a>
-   </div>
-
-   <!--right logo-->
-   <div class="logo-right">
-    <img src="Assets/bus2.png" alt="right logo">
-   </div>
-
-  
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-    </a>
-
-   </div>
-    <!--End of Navigation bar-->
-
-    <!--About section-->
-    <section class="content-section">
-      <div class="text-content">
-        <h1>About Us Page</h1>
-          <p>We are dedicated to providing the best transportation services in the industry.<br> Our team is committed to ensuring your journey is safe, comfortable, and enjoyable.</p>
-          <p>To provide safe, reliable, and affordable transportation solutions for all.</p>
-          <p>We strive to exceed customer expectations through innovation, quality service,<br> and a commitment to excellence.</p>
-        <a href="#services" class="btn-orange">Discover More</a>
+         </div>
       </div>
-     <div class="image-sect">
-            <img src="Assets/ship-3.jpg" alt="modern bus"class="main-image">
-       <div class="experience-badge">
-          <span class="years">20+</span>
-          <div class="registries-text">YEAR OF REGISTRIES</div>
-       </div>
-       <img src="Assets/air-1.jpg" alt="overlay-image"class="overlay-image">
-      </div>
+    </div>
+  </div>
     </section>
-     <!--Features section-->
-    <section class="features">
+    <!--Features Section-->
+    <section class="features-section mb-5">
+    <div class="features">
+      <div class="feature-card">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Experience and expertise</h3>
+        <p class="card-details">We bring years of hands-on industry experience <br>to ensure your needs are met professionally and efficiently.</p>
+      </div>
+      <!--card 2-->
         <div class="feature-card">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h3>Experience and Expertise</h3>
-            <p>Over 20 years in transportation excellence.</p>
-        </div>
-
-         <div class="feature-card">
-            <i class="fa-solid fa-clock"></i>
-            <h3>Reliability and Timeliness</h3>
-            <p>We always deliver on time..</p>
-        </div>
-
-         <div class="feature-card">
-            <i class="fa-solid fa-globe"></i>
-            <h3>Comprehensive Service</h3>
-            <p>Nationalwide and international coverage.</p>
-        </div>
-    </section>
-      <!--industry explicit-->
-      <section class="industry-explicit">
-        <div class="img-size">
-            <img src="Assets/air-1.jpg" alt="airplane image" style="width:100%">
-        </div>
-        <div class="text-size">
-            <h2>Our Industry-explicit <span class="highlight">competence</span></h2>
-         <p>
-            We specialize in transportation solutions <br>
-            tailored to the unique needs of various industries, including logistics, healthcare, and tourism. <br>
-            Our team is equipped with the knowledge and skills to handle the specific challenges of each sector.
-         </p>
-            
-        <a href="#tickets" class="btn-orange">Get ticket now</a>
-        </div>
-      </section>
-      <!--Team section-->
-    <section class="team-wrapper">
-      <div class="centered">
-        <img src="Assets/person-1.jpg" alt="person-1"style="width: 90px">
-        <h2>George Karanja</h2>
-        <p>Advisor-Travels@Buupass</p>
-        <p>For any other assistance and queries </p>
+        <i class="fa-solid fa-clock"></i>
+        <h3>Reliability and Timeliness</h3>
+        <p class="card-details">Our team values your time and works around the clock to deliver services without delays.</p>
       </div>
-    
-      <div class="centered">
-        <img src="Assets/person-2.jpg" alt="person-2"style="width: 90px">
-        <h2>Emily Akasa</h2>
+      <!--Card 3-->
+       <div class="feature-card">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Comprehensive Services</h3>
+        <p class="card-details">We offer a full suite of solutions, <br>from local to international logistics, tailored to your needs.</p>
+      </div>
+    </div>
+  </section>
+<!--competence section-->
+<section class="competence-section">
+   <div class="competence-content">
+      <div class="competence-image">
+           <img src="Assets/trucks.jpg" alt="Industry Competence">
+       </div>
+   <div class="competence-text">
+        <h2>Our industry-explicit competence</h2>
+        <p>We specialize in transportation solutions tailored<br>to the unique needs of various industries.</p>
+        <ul class="competence-list">
+               <li>Customs clearance and documentation</li>
+               <li>Temperature-controlled transportation</li>
+               <li>Dangerous goods handling</li>
+               <li>Last-mile delivery solutions</li>
+         </ul>
+      <button type="button" class="btn btn-primary" id="modal-contact-btn">Get in Touch</button>
+      </div>
+     </div>
+ </section>
+    <!--Team section-->
+ <section class="team-section">
+   <div class="section-header">
+      <h2>Transport expert team</h2>
+   </div>
+     <div class="team-grid">
+        <div class="team-card">
+          <img src="Assets/person-1.jpg" alt="George Karanja">
+            <h3>George Karanja</h3>
+            <p>Advisor-Travels@Buupass</p>
+         </div>
+        <!--Team Member 2-->
+      <div class="team-card">
+        <img src="Assets/person-2.jpg" alt="person-2">
+        <h3>Emily Akasa</h3>
         <p>Coordinator-Travels@Buupass</p>
-        <p>We plan your trips to be seamless as possible.</p>
       </div>
-      <div class="centered">
-        <img src="Assets/man.jpg" alt="person-2"style="width: 90px">
-        <h2>Jacob Suleiman</h2>
-        <p><bold>Attendant-Travels@Buupass</bold></p>
-        <p>We plan and schedule your flights for safe travels.</p>
+        
+      <div class="team-card">
+        <img src="Assets/man.jpg" alt="Jacob Suleiman">
+          <h3>Jacob Suleiman</h3>
+          <p>Attendant-Travels@Buupass</p>
       </div>
-      <div class="centered">
-        <img src="Assets/woman.jpg" alt="person-2"style="width: 90px">
-        <h2>Bridget Muthoni</h2>
-        <p>Personal trainer@Buupass</p>
-        <p>We offer varied offers on training.</p>
+
+      <div class="team-card" data-member="bridget">
+        <img src="Assets/woman.jpg" alt="Bridget Muthoni">
+          <h3>Bridget Muthoni</h3>
+          <p>Personal trainer@Buupass</p>
       </div>
+    </div>
     </section>
+    </main>
        
    <!--End of Team section--> 
-   <script>
-    function myFunction() {
-        var x = document.getElementById("Topnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    </script>
-
-    <div class="footer">
-        <!-- <h2>Footer</h2> -->
-        <p>&copy; 2025 My Landing Page. All rights reserved.</p>
-        <p>Follow us on:
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <footer class="footer">
+      <footer class="footer-container">
+        <div class="footer-col">
+          <h3>Aerologic</h3>
+          <p>Your trusted partner for comprehensive logistics and transportation solutions worldwide.</p>
+        </div>   
+          <div class="social-icons">
+            <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
+          </div>
+         <div class="container">
+           <div class="cta-buttons">
+            <a href="#" class="btn btn-discover">Discover More</a>
+            <button class="btn btn-contact" id="contact-btn">Contact Us</button>
+        </div>
     
+        <div class="footer-bottom">
+          <p>&copy; 2025 Aerologic. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+<!-- Modal Container -->
+<div id="memberModal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img id="modalImage" src="" alt="Team Member">
+    <h3 id="modalName"></h3>
+    <p id="modalPosition"></p>
+    <div id="modalBio"></div>
+  </div>
+</div>
+
+<!-- contact Modal -->
+<!-- <button id="contact-Btn">Contact</button> -->
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<!--Javascript link-->
+  <script src="script.js"></script>
+ 
 </body>
 </html>
